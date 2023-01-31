@@ -21,6 +21,8 @@ export default function Home() {
 					animate={Neko ? "enter" : "leave"}
           transition={{ duration: 0.5 }}
           onClick={() => navigate("/cat")}
+          onMouseOver={() => setNeko(true)}
+          onMouseLeave={() => setNeko(false)}
           className="cursor-pointer"
 				>
 					かわいい猫ちゃんに会おう
@@ -31,19 +33,20 @@ export default function Home() {
 					initial="leave"
           transition={{ duration: 0.5 }}
           onClick={() => navigate("/dog")}
+          onMouseOver={() => setInu(true)}
+          onMouseLeave={() => setInu(false)}
           className="cursor-pointer"
 				>
 					かわいいワンちゃんに会おう
 				</motion.p>
 			</div>
-			<div className="h-full w-full flex">
+			<div className="h-full w-full flex cursor-pointer">
 				<Rive
 					src="/cat.riv"
 					stateMachines="State Machine 1"
 					onClick={() => navigate("/cat")}
 					onMouseOver={() => setNeko(true)}
           onMouseLeave={() => setNeko(false)}
-          className="cursor-pointer"
 				/>
 				<Rive
 					src="/dog.riv"
@@ -51,7 +54,6 @@ export default function Home() {
 					onClick={() => navigate("/dog")}
 					onMouseOver={() => setInu(true)}
           onMouseLeave={() => setInu(false)}
-          className="cursor-pointer"
 				/>
 			</div>
 		</div>
