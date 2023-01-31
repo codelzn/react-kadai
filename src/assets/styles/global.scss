@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,26 +11,8 @@ body,
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-family: 'Hachi Maru Pop', cursive;
 }
 #root {
   position: relative;
-}
-
-canvas {
-  touch-action: none;
-}
-
-.htmlScreen iframe {
-  width: 1024px;
-  height: 670px;
-  border: none;
-  border-radius: 20px;
-  background-color: #000;
-}
-.spScreen iframe {
-  width: 522px;
-  height: 1050px;
-  border: none;
-  border-radius: 20px;
-  background-color: #000;
 }
