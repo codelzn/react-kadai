@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#root {
+  position: relative;
+}
+
+canvas {
+  touch-action: none;
+}
+
+.htmlScreen iframe {
+  width: 1024px;
+  height: 670px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000;
+}
+.spScreen iframe {
+  width: 522px;
+  height: 1050px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000;
+}
