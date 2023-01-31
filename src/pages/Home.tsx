@@ -13,7 +13,7 @@ export default function Home() {
 	const [Neko, setNeko] = useState(false)
 	const [Inu, setInu] = useState(false)
 	return (
-		<div className="h-full w-full bg-[#FCBA2B] relative">
+		<div className="h-full w-full relative">
 			<div className="absolute w-full flex justify-around text-4xl top-10">
 				<motion.p
 					variants={variants}
